@@ -1,0 +1,752 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="dark" />
+<link rel="icon" href="data:," />
+<title>UGC Rate Sheet — Kamani Brown</title>
+<meta name="description" content="Kamani Brown — UGC rate sheet. Flat rates in USD: UGC-only video $350, 3-Video Test Pack $1,050, Monthly Content Bank by enquiry. Usage, whitelisting and rush add-ons priced up front." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+/* ============================================================
+   KAMANI BROWN — UGC RATE SHEET (SIGNAL system)
+   The standalone rate sheet, exactly as it presents live:
+   black #0B0C0E, liquid gold #C5A27D, Plus Jakarta Sans.
+   Mirrors the brand Rate Sheet page structure — hero, packages,
+   add-ons, terms, enquiry — in the SIGNAL black-and-gold cut.
+   ============================================================ */
+:root{
+  --bg:#07080A; --bg2:#0B0C0E;
+  --line:rgba(255,255,255,.08); --line-soft:rgba(255,255,255,.05);
+  --gold:#C5A27D; --gold-hi:#EECD9F; --gold-deep:#8C6F4D;
+  --silver:#C9CED6; --silver-dim:#878F9C;
+  --cream:#FCFAF7; --ink:#ECE9E2; --muted:#9BA3AF; --sage:#BCD2C4;
+  --mono:ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace;
+  --ease:cubic-bezier(.16,1,.3,1);
+}
+*{box-sizing:border-box}
+button,[role="button"],select,summary,input:not([type="checkbox"],[type="radio"]){min-height:2rem}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Plus Jakarta Sans',system-ui,sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+::selection{background:var(--gold);color:#0B0C0E}
+::-webkit-scrollbar{width:10px}
+::-webkit-scrollbar-track{background:#0B0C0E}
+::-webkit-scrollbar-thumb{background:#26262B;border-radius:6px;border:2px solid #0B0C0E}
+::-webkit-scrollbar-thumb:hover{background:var(--gold-deep)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1220px;margin:0 auto;padding:0 24px;position:relative;z-index:2}
+.mono{font-family:var(--mono)}
+
+#scroll-progress{position:fixed;top:0;left:0;height:2px;width:0;background:linear-gradient(90deg,var(--gold-deep),var(--gold),var(--gold-hi));z-index:200;box-shadow:0 0 12px rgba(197,162,125,.65)}
+
+/* ---------- sticky nav ---------- */
+#sticky-nav{position:fixed;top:10px;left:50%;transform:translateX(-50%);z-index:120;width:min(97%,1120px);
+  display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:nowrap;
+  background:rgba(9,10,12,.78);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border:1px solid rgba(255,255,255,.1);border-radius:999px;padding:4px 5px 4px 12px;
+  box-shadow:0 14px 34px rgba(0,0,0,.5), inset 0 1px 0 rgba(197,162,125,.25);
+  opacity:1;pointer-events:auto;transition:opacity .45s ease,transform .45s var(--ease)}
+#sticky-nav.is-hidden{opacity:0;transform:translateX(-50%) translateY(-8px);pointer-events:none}
+.nav-logo{display:block;height:20px;width:auto;flex:none}
+.nav-links{display:flex;gap:10px;flex-wrap:nowrap;justify-content:center;align-items:center;min-width:0;flex:1}
+.nav-links a{font-size:11px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--silver);text-decoration:none;transition:color .25s;white-space:nowrap;padding:6px 1px}
+.nav-links a:hover{color:var(--gold)}
+.nav-cta{background:var(--gold);color:#0B0C0E;font-size:11px;font-weight:800;letter-spacing:.04em;padding:6px 13px;border-radius:999px;text-decoration:none;transition:.25s;white-space:nowrap;flex:none}
+.nav-cta:hover{background:var(--gold-hi)}
+section[id],footer[id],header[id]{scroll-margin-top:64px}
+@media(max-width:920px){
+  #sticky-nav{flex-wrap:nowrap;border-radius:999px;padding:4px 5px 4px 10px;justify-content:space-between;gap:6px}
+  .nav-links{flex-wrap:nowrap;justify-content:center;gap:7px}
+  .nav-links a{font-size:10px;letter-spacing:.03em;padding:5px 1px}
+  .nav-logo{height:18px}
+  .nav-cta{font-size:10.5px;padding:6px 11px}
+  section[id],footer[id],header[id]{scroll-margin-top:64px}
+}
+@media(max-width:680px){
+  #sticky-nav{top:8px;width:98%;gap:4px;padding:3px 4px 3px 8px;flex-wrap:nowrap;border-radius:999px}
+  .nav-links{flex:1;order:0;justify-content:center;gap:5px;flex-wrap:nowrap}
+  .nav-links a{font-size:9.5px;letter-spacing:.02em;padding:5px 1px}
+  .nav-cta{font-size:10px;padding:5px 10px;margin-left:0}
+  .nav-logo{height:16px;margin-right:0}
+  section[id],footer[id],header[id]{scroll-margin-top:60px}
+}
+@media(max-width:360px){
+  .nav-links{gap:3px}
+  .nav-links a{font-size:9px}
+  .nav-cta{font-size:9.5px;padding:5px 8px}
+  .nav-logo{height:15px}
+}
+
+/* ---------- shared furniture ---------- */
+.section{padding:96px 0;position:relative;overflow:hidden}
+.section.alt{background:linear-gradient(180deg,#090A0C 0%,var(--bg2) 55%,#090A0C 100%);border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft)}
+.sec-index{position:absolute;top:36px;right:2vw;font-family:var(--mono);font-size:clamp(90px,14vw,190px);font-weight:700;line-height:1;color:transparent;-webkit-text-stroke:1px rgba(197,162,125,.09);pointer-events:none;z-index:0}
+.kicker{display:inline-flex;align-items:center;gap:12px;font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.32em;text-transform:uppercase;color:var(--gold)}
+.kicker::before{content:'';width:36px;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
+.sec-title{font-size:clamp(34px,5.2vw,56px);font-weight:800;letter-spacing:-.02em;line-height:1.04;color:var(--cream);margin:16px 0 0}
+.sec-title em{font-style:normal;color:transparent;background:linear-gradient(95deg,var(--gold-hi),var(--gold) 55%,var(--gold-deep));-webkit-background-clip:text;background-clip:text}
+.sec-sub{color:var(--muted);font-size:16px;line-height:1.65;max-width:640px;margin:16px 0 0;font-weight:300}
+.sec-head{margin-bottom:52px;position:relative;z-index:2}
+.panel{position:relative;background:linear-gradient(165deg,rgba(255,255,255,.05),rgba(255,255,255,.014) 55%);border:1px solid var(--line);border-radius:18px;transition:transform .5s var(--ease),border-color .4s,box-shadow .5s}
+.panel::before{content:'';position:absolute;top:0;left:22px;right:22px;height:1px;background:linear-gradient(90deg,transparent,rgba(197,162,125,.55),transparent);opacity:.35;transition:opacity .4s}
+.panel:hover{transform:translateY(-4px);border-color:rgba(197,162,125,.38);box-shadow:0 24px 48px rgba(0,0,0,.45)}
+.panel:hover::before{opacity:1}
+/* Content is visible by default; the reveal is a pure enhancement
+   layered on top via animation once a section scrolls into view,
+   so nothing ever depends on a reveal state to be read. */
+.scroll-reveal.active{animation:reveal-in .8s ease both}
+.scroll-reveal-children.active>*{animation:reveal-in .7s ease both}
+@keyframes reveal-in{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.scroll-reveal-children.active>*:nth-child(1){transition-delay:.02s}.scroll-reveal-children.active>*:nth-child(2){transition-delay:.09s}
+.scroll-reveal-children.active>*:nth-child(3){transition-delay:.16s}.scroll-reveal-children.active>*:nth-child(4){transition-delay:.23s}
+.scroll-reveal-children.active>*:nth-child(5){transition-delay:.30s}.scroll-reveal-children.active>*:nth-child(6){transition-delay:.37s}
+.marquee{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 9%,#000 91%,transparent);mask-image:linear-gradient(90deg,transparent,#000 9%,#000 91%,transparent)}
+.marquee-track{display:flex;width:max-content;animation:mq 30s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.mq-group{display:flex;align-items:center;flex:none}
+@keyframes mq{to{transform:translateX(-50%)}}
+.mq-item{padding:0 30px;font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:rgba(197,162,125,.55);white-space:nowrap}
+.mq-dot{color:rgba(255,255,255,.14);font-size:10px}
+.btn{display:inline-flex;align-items:center;gap:10px;font-weight:800;font-size:14px;letter-spacing:.02em;padding:15px 28px;border-radius:999px;text-decoration:none;transition:.3s;border:1px solid transparent;cursor:pointer;background:none;font-family:inherit;touch-action:manipulation;-webkit-tap-highlight-color:transparent;min-height:44px}
+.btn-gold{background:linear-gradient(120deg,var(--gold-hi),var(--gold) 55%,#B08D5F);color:#0B0C0E;box-shadow:0 10px 30px rgba(197,162,125,.28)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 16px 38px rgba(197,162,125,.4)}
+.btn-ghost{border-color:rgba(255,255,255,.18);color:var(--cream);background:rgba(255,255,255,.03)}
+.btn-ghost:hover{border-color:rgba(197,162,125,.6);color:var(--gold-hi);transform:translateY(-2px)}
+.btn svg{flex:none}
+
+/* ---------- hero ---------- */
+.hero{position:relative;padding:104px 0 0;overflow:hidden;background:radial-gradient(1100px 540px at 78% -10%,rgba(197,162,125,.14),transparent 60%),radial-gradient(820px 520px at 6% 108%,rgba(185,207,196,.05),transparent 60%),linear-gradient(180deg,#090A0C,#07080A)}
+.hero-dots{position:absolute;inset:0;background-image:radial-gradient(rgba(197,162,125,.13) 1px,transparent 1.5px);background-size:26px 26px;-webkit-mask-image:radial-gradient(660px 430px at 72% 14%,#000 15%,transparent 74%);mask-image:radial-gradient(660px 430px at 72% 14%,#000 15%,transparent 74%);pointer-events:none}
+.scanline{position:absolute;left:0;right:0;top:-190px;height:170px;background:linear-gradient(180deg,transparent,rgba(197,162,125,.06),transparent);animation:scan 9s linear infinite;pointer-events:none;z-index:1}
+@keyframes scan{from{top:-190px}to{top:106%}}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 16px;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.025);backdrop-filter:blur(8px);position:relative;z-index:3}
+.kb-logo{display:block;height:44px;width:auto;flex:none}
+.tb-read{font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;color:var(--silver-dim);text-transform:uppercase;text-align:center}
+.status-pill{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:9.5px;font-weight:700;letter-spacing:.15em;color:var(--sage);border:1px solid rgba(185,207,196,.3);padding:7px 12px;border-radius:999px;text-transform:uppercase;flex:none;white-space:nowrap}
+.status-dot{width:7px;height:7px;border-radius:50%;background:#9FD3AE;box-shadow:0 0 10px rgba(159,211,174,.9);animation:blinkdot 2.2s ease-in-out infinite}
+@keyframes blinkdot{0%,100%{opacity:1}50%{opacity:.3}}
+@media(max-width:760px){.tb-read{display:none}}
+.hero-main{text-align:center;padding:64px 0 8px;position:relative;z-index:2}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:12px;font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--gold)}
+.hero-eyebrow::before,.hero-eyebrow::after{content:'';width:34px;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
+.hero-eyebrow::after{background:linear-gradient(90deg,var(--gold),transparent)}
+.hero-title{margin:24px 0 0;font-weight:800;line-height:.96;letter-spacing:-.015em;font-size:clamp(52px,10.5vw,128px);text-transform:uppercase}
+.hero-title .line1{display:block;color:transparent;background:linear-gradient(100deg,#F7E9CB 0%,var(--gold-hi) 22%,var(--gold) 48%,var(--gold-deep) 74%,var(--gold) 100%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;animation:sheen 7s ease-in-out infinite alternate;filter:drop-shadow(0 8px 28px rgba(197,162,125,.16))}
+.hero-title .line2{display:block;color:transparent;-webkit-text-stroke:1.5px rgba(197,162,125,.72)}
+@keyframes sheen{from{background-position:0% 0}to{background-position:100% 0}}
+.hero-tag{margin:26px auto 0;font-size:clamp(19px,2.6vw,27px);font-weight:600;color:var(--cream);letter-spacing:-.01em;max-width:760px}
+.hero-tag .gold{color:var(--gold)}
+.hero-sub{margin:16px auto 0;color:var(--muted);font-size:16px;line-height:1.65;max-width:640px;font-weight:300}
+.hero-ctas{margin:32px 0 0;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.hero-stats{margin:64px auto 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:grid;grid-template-columns:repeat(4,1fr);position:relative;background:rgba(255,255,255,.014)}
+.hero-stats::before,.hero-stats::after{content:'+';position:absolute;font-family:var(--mono);color:var(--gold);font-size:14px;line-height:1;z-index:2}
+.hero-stats::before{left:-5px;top:-9px}
+.hero-stats::after{right:-5px;bottom:-9px}
+.hstat{padding:27px 16px;text-align:center;border-left:1px solid var(--line-soft)}
+.hstat:first-child{border-left:0}
+.hstat .num{font-size:clamp(28px,4vw,42px);font-weight:800;color:var(--cream);letter-spacing:-.02em;line-height:1}
+.hstat .num span{color:var(--gold)}
+.hstat .lab{margin-top:9px;font-family:var(--mono);font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--silver-dim)}
+@media(max-width:640px){.hero-stats{grid-template-columns:repeat(2,1fr)}.hstat{border-top:1px solid var(--line-soft)}.hstat:nth-child(-n+2){border-top:0}.hstat:nth-child(3){border-left:0}}
+.hero-marquee{padding:20px 0;border-bottom:1px solid var(--line-soft)}
+
+/* ---------- rate sheet ---------- */
+.tier-cat{font-family:var(--mono);font-size:10px;letter-spacing:.26em;color:var(--silver-dim);text-transform:uppercase}
+.rate-top{display:grid;grid-template-columns:.92fr 1.08fr;gap:24px;position:relative;z-index:2}
+@media(max-width:920px){.rate-top{grid-template-columns:1fr}}
+.rate-base{padding:38px 34px;overflow:hidden}
+.rate-base .tier-cat{color:var(--gold)}
+.rate-price{margin:18px 0 4px;font-size:clamp(56px,7vw,76px);font-weight:800;line-height:.95;letter-spacing:-.03em;color:var(--cream)}
+.rate-price span{font-size:22px;color:var(--gold);font-weight:700;letter-spacing:0;vertical-align:top}
+.rate-per{font-family:var(--mono);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--silver-dim)}
+.rate-base p{margin:20px 0 0;color:var(--muted);font-size:14.5px;line-height:1.7;font-weight:300}
+.rate-base p b{color:var(--cream);font-weight:700}
+.rate-note-band{margin-top:24px;padding:16px 18px;border:1px solid rgba(197,162,125,.35);border-radius:12px;background:rgba(197,162,125,.06);font-size:13.5px;line-height:1.6;color:#D8D3C8}
+.rate-note-band b{color:var(--gold-hi)}
+.rate-includes{list-style:none;margin:24px 0 0;padding:20px 0 0;border-top:1px solid var(--line-soft);display:flex;flex-direction:column;gap:12px}
+.rate-includes li{display:flex;gap:11px;font-size:14px;color:#C9CBD1;line-height:1.5}
+.rate-includes li svg{color:var(--gold);flex:none;margin-top:3px}
+.rate-actions{margin-top:26px;display:flex;gap:10px;flex-wrap:wrap}
+.rate-addons{padding:34px 32px}
+.rate-addons h3{margin:0 0 6px;font-size:19px;font-weight:800;color:var(--cream)}
+.rate-addons>p{margin:0 0 10px;color:var(--muted);font-size:13.5px;line-height:1.6;font-weight:300}
+.price-rows{display:flex;flex-direction:column}
+.price-row{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:13px 0;border-bottom:1px solid var(--line-soft)}
+.price-row:last-child{border-bottom:0}
+.price-row .k{font-size:14px;color:#C9CBD1;line-height:1.45;flex:1;min-width:0}
+.price-row .k small{display:block;color:var(--silver-dim);font-size:12px;margin-top:2px}
+.price-row .v{font-family:var(--mono);font-size:15px;font-weight:700;color:var(--gold-hi);white-space:nowrap}
+.row-btn{font:inherit;font-family:var(--mono);font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:8px 13px;border-radius:999px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.03);color:var(--silver);cursor:pointer;white-space:nowrap;transition:.25s;min-height:36px;flex:none}
+.row-btn:hover{border-color:rgba(197,162,125,.55);color:var(--gold-hi)}
+.row-btn.added{background:var(--gold);border-color:var(--gold);color:#0B0C0E}
+.row-btn.copied{background:var(--gold);border-color:var(--gold);color:#0B0C0E}
+.mini-btn{font:inherit;font-size:13px;font-weight:700;padding:11px 18px;border-radius:999px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.03);color:var(--cream);cursor:pointer;transition:.25s;min-height:40px}
+.mini-btn:hover{border-color:rgba(197,162,125,.55);color:var(--gold-hi)}
+.mini-btn.added{background:var(--gold);border-color:var(--gold);color:#0B0C0E}
+.mini-btn.copied{background:var(--gold);border-color:var(--gold);color:#0B0C0E}
+
+.rate-packs{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:24px;position:relative;z-index:2}
+@media(max-width:960px){.rate-packs{grid-template-columns:1fr}}
+.rate-pack{padding:32px 30px;display:flex;flex-direction:column}
+.rate-pack.hot{border-color:rgba(197,162,125,.5);background:linear-gradient(170deg,rgba(197,162,125,.1),rgba(255,255,255,.015) 62%)}
+.tier-flag{position:absolute;top:-13px;right:26px;background:linear-gradient(120deg,var(--gold-hi),var(--gold));color:#0B0C0E;font-family:var(--mono);font-size:9.5px;font-weight:700;letter-spacing:.15em;padding:6px 12px;border-radius:999px;z-index:2}
+.rate-pack h3{margin:10px 0 4px;font-size:22px;font-weight:800;color:var(--cream)}
+.rate-pack .amount{font-size:34px;font-weight:800;color:var(--cream);letter-spacing:-.02em;line-height:1.1}
+.rate-pack .amount span{font-size:14px;color:var(--gold);font-family:var(--mono);font-weight:700;letter-spacing:.06em}
+.rate-pack p{margin:12px 0 0;color:var(--muted);font-size:13.5px;line-height:1.65;font-weight:300;flex:1}
+.rate-pack .rate-actions{margin-top:22px}
+.rate-terms-strip{margin-top:24px;padding:22px 26px;display:flex;gap:14px 36px;flex-wrap:wrap;position:relative;z-index:2}
+.rate-terms-strip span{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--silver)}
+.rate-terms-strip b{color:var(--gold-hi);font-weight:700}
+
+/* ---------- terms ---------- */
+.terms-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;position:relative;z-index:2}
+@media(max-width:920px){.terms-grid{grid-template-columns:1fr}}
+.term-card{padding:34px 32px;overflow:hidden}
+.term-card .term-ico{width:52px;height:52px;border:1px solid rgba(197,162,125,.4);border-radius:14px;display:flex;align-items:center;justify-content:center;color:var(--gold);background:rgba(197,162,125,.06);margin-bottom:20px}
+.term-card h3{margin:0 0 10px;font-size:19px;font-weight:800;color:var(--cream)}
+.term-card p{margin:0;color:var(--muted);font-size:14.5px;line-height:1.7;font-weight:300}
+.term-card p b{color:var(--cream);font-weight:700}
+.term-card p + p{margin-top:10px}
+
+/* ---------- estimator bar ---------- */
+.estimator{position:fixed;left:50%;transform:translateX(-50%) translateY(calc(100% + 48px));bottom:16px;z-index:150;width:min(680px,calc(100% - 24px));background:rgba(13,14,17,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);color:var(--cream);border:1px solid rgba(197,162,125,.45);border-radius:16px;padding:14px 16px;display:flex;align-items:center;gap:12px;box-shadow:0 16px 40px rgba(0,0,0,.55);transition:transform .3s var(--ease);pointer-events:none}
+.estimator.show{transform:translateX(-50%) translateY(0);pointer-events:auto}
+.estimator .est-main{flex:1;min-width:0}
+.estimator b{font-size:20px;font-weight:800;letter-spacing:-.02em;color:var(--cream)}
+.estimator b span{color:var(--gold);font-size:13px;font-family:var(--mono);letter-spacing:.06em}
+.estimator small{display:block;color:var(--silver-dim);font-size:12px;margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.est-btn{font:inherit;font-size:12.5px;font-weight:700;padding:10px 14px;border-radius:10px;border:1px solid rgba(255,255,255,.2);background:transparent;color:var(--cream);cursor:pointer;white-space:nowrap;min-height:40px}
+.est-btn.solid{background:var(--gold);border-color:var(--gold);color:#0B0C0E}
+@media(max-width:480px){.estimator{flex-wrap:wrap}.estimator .est-main{flex:1 1 100%}}
+.toast{position:fixed;left:50%;bottom:96px;transform:translateX(-50%) translateY(10px);background:#15171B;color:var(--cream);border:1px solid rgba(197,162,125,.5);font-size:13.5px;font-weight:600;padding:10px 16px;border-radius:999px;opacity:0;pointer-events:none;transition:.2s;z-index:160;max-width:calc(100% - 32px);text-align:center}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* ---------- footer / enquiry ---------- */
+.footer{border-top:1px solid var(--line-soft);background:linear-gradient(180deg,#07080A,#050506);overflow:hidden}
+.cta-zone{text-align:center;padding:96px 0 70px;position:relative}
+.cta-zone h2{margin:22px auto 0;font-size:clamp(37px,6.4vw,82px);font-weight:800;line-height:1.03;letter-spacing:-.02em;color:var(--cream);max-width:1020px;text-transform:uppercase}
+.cta-zone h2 .gold-line{display:block;color:transparent;background:linear-gradient(95deg,var(--gold-hi),var(--gold) 60%,var(--gold-deep));-webkit-background-clip:text;background-clip:text}
+.cta-zone p{color:var(--muted);max-width:540px;margin:24px auto 0;line-height:1.7;font-weight:300;font-size:15.5px}
+.cta-btns{margin-top:38px;display:flex;gap:13px;justify-content:center;flex-wrap:wrap}
+.footer-bar{border-top:1px solid var(--line-soft);padding:22px 0 28px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;color:var(--silver-dim);text-transform:uppercase}
+.footer-bar a{color:var(--silver);text-decoration:none;padding:4px 0}
+.footer-bar a:hover{color:var(--gold)}
+
+/* ---------- enquiry dialog ---------- */
+.enquire-dialog{position:fixed;inset:0;z-index:300;display:none;align-items:center;justify-content:center;padding:20px}
+.enquire-dialog.open{display:flex}
+.enquire-backdrop{position:absolute;inset:0;background:rgba(3,4,5,.74);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.enquire-card{position:relative;width:min(480px,100%);background:linear-gradient(170deg,#15171B,#0C0D10);border:1px solid rgba(197,162,125,.45);border-radius:20px;padding:36px 30px 28px;box-shadow:0 34px 80px rgba(0,0,0,.65)}
+.enquire-card::before{content:'';position:absolute;top:0;left:22px;right:22px;height:1px;background:linear-gradient(90deg,transparent,rgba(197,162,125,.7),transparent)}
+.enquire-card h3{margin:14px 0 0;font-size:26px;font-weight:800;color:var(--cream);letter-spacing:-.01em}
+.enquire-note{margin:12px 0 0;color:var(--muted);font-size:14px;line-height:1.65;font-weight:300}
+.enquire-addr{margin-top:20px;display:flex;align-items:center;justify-content:space-between;gap:12px;background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:12px;padding:12px 12px 12px 16px}
+.enquire-addr span{font-family:var(--mono);font-size:13.5px;color:var(--cream);word-break:break-all}
+.enquire-copy{flex:none;display:inline-flex;align-items:center;gap:7px;font-family:var(--mono);font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-hi);background:rgba(197,162,125,.1);border:1px solid rgba(197,162,125,.4);border-radius:999px;padding:8px 13px;cursor:pointer;transition:.25s;min-height:36px}
+.enquire-copy:hover{background:rgba(197,162,125,.22)}
+.enquire-actions{margin-top:18px;display:flex;flex-direction:column;gap:10px}
+.enquire-actions .btn{justify-content:center;width:100%}
+.enquire-close{position:absolute;top:12px;right:12px;width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);color:var(--silver);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:.25s}
+.enquire-close:hover{color:var(--gold-hi);border-color:rgba(197,162,125,.55)}
+
+@media (hover:none){
+  .scroll-reveal,.scroll-reveal-children>*{opacity:1!important;transform:none!important}
+  #sticky-nav{opacity:1!important;transform:translateX(-50%)!important;pointer-events:auto!important}
+  .panel:hover{transform:none}
+  .btn-gold:hover,.btn-ghost:hover{transform:none}
+}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  .scroll-reveal,.scroll-reveal-children>*{opacity:1;transform:none}
+  .marquee-track{animation:none}
+}
+@media print{
+  #sticky-nav,.estimator,.hero-ctas,.cta-btns,.rate-actions,.row-btn{display:none!important}
+  body{background:#0B0C0E}
+}
+</style>
+</head>
+<body>
+<div id="scroll-progress"></div>
+
+<nav id="sticky-nav" class="is-hidden" aria-label="Quick navigation">
+  <img class="nav-logo" src="https://pub-ce876c73fc7d4e1a830a749fa9195f81.r2.dev/ugc-rate-sheet/assets/images/logo-kb.webp" alt="Kamani Brown logo" />
+  <div class="nav-links">
+    <a href="#rates">Rates</a>
+    <a href="#packages">Packages</a>
+    <a href="#addons">Add-Ons</a>
+    <a href="#terms">Terms</a>
+  </div>
+  <button type="button" class="nav-cta" data-enquire style="border:0;cursor:pointer;font-family:inherit">Enquire</button>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero" id="top">
+  <div class="hero-dots" aria-hidden="true"></div>
+  <div class="scanline" aria-hidden="true"></div>
+
+  <div class="wrap">
+    <div class="topbar">
+      <img class="kb-logo" src="https://pub-ce876c73fc7d4e1a830a749fa9195f81.r2.dev/ugc-rate-sheet/assets/images/logo-kb.webp" alt="Kamani Brown logo" />
+      <span class="tb-read">UGC Rate Sheet // Vol. 2026 — Flat Rates · USD · Net to Creator</span>
+      <span class="status-pill"><span class="status-dot"></span> Booking UGC Projects</span>
+    </div>
+
+    <div class="hero-main">
+      <span class="hero-eyebrow">✦ Kamani Brown — UGC Creator</span>
+      <h1 class="hero-title"><span class="line1">UGC Rate</span><span class="line2">Sheet</span></h1>
+      <p class="hero-tag">Flat rates. <span class="gold">No surprises at invoice time.</span></p>
+      <p class="hero-sub">One base rate for ad-ready UGC video, honest add-ons for the usage your campaign actually needs, and every figure in US dollars. You&rsquo;re hiring the craft — shot, performed and edited in-house — not a follower count.</p>
+      <div class="hero-ctas">
+        <a href="#rates" class="btn btn-gold">See the Rates
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
+        <button type="button" class="btn btn-ghost" data-enquire>Enquire About a Booking</button>
+      </div>
+    </div>
+
+    <div class="hero-stats" role="list" aria-label="Headline UGC rates">
+      <div class="hstat" role="listitem"><div class="num">$350</div><div class="lab">UGC-Only Video · USD</div></div>
+      <div class="hstat" role="listitem"><div class="num">$1,050</div><div class="lab">3-Video Test Pack · USD</div></div>
+      <div class="hstat" role="listitem"><div class="num">+$400</div><div class="lab">Usage Rights — Paid Ads</div></div>
+      <div class="hstat" role="listitem"><div class="num">Custom</div><div class="lab">Monthly Content Bank</div></div>
+    </div>
+  </div>
+
+  <div class="marquee hero-marquee" aria-hidden="true">
+    <div class="marquee-track" id="marqueeTrack">
+      <div class="mq-group">
+        <span class="mq-item">UGC-Only Video</span><span class="mq-dot">✦</span>
+        <span class="mq-item">3-Video Test Pack</span><span class="mq-dot">✦</span>
+        <span class="mq-item">Monthly Content Bank</span><span class="mq-dot">✦</span>
+        <span class="mq-item">Usage Rights</span><span class="mq-dot">✦</span>
+        <span class="mq-item">Whitelisting</span><span class="mq-dot">✦</span>
+        <span class="mq-item">Cross-Posting</span><span class="mq-dot">✦</span>
+        <span class="mq-item">Rush Delivery</span><span class="mq-dot">✦</span>
+        <span class="mq-item">All Rates in USD</span><span class="mq-dot">✦</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ================= RATES ================= -->
+<section class="section alt" id="rates">
+  <span class="sec-index" aria-hidden="true">01</span>
+  <div class="wrap">
+    <div class="sec-head scroll-reveal">
+      <span class="kicker">01 / Base Rate &amp; Add-Ons</span>
+      <h2 class="sec-title">UGC rate sheet. <em>Flat rates, in USD.</em></h2>
+      <p class="sec-sub">One base rate, honest add-ons, no follower-count maths. Everything below is in US dollars, and every quote is net to Kamani — payment-processing fees are on the brand or grossed up in the quote.</p>
+    </div>
+
+    <div class="rate-top scroll-reveal-children">
+      <article class="rate-base panel" data-name="UGC-only video" data-price="350" data-label="$350 USD">
+        <span class="tier-cat">Base Rate — UGC-Only Video</span>
+        <div class="rate-price"><span>US$</span>350</div>
+        <div class="rate-per">Per video · Organic use included</div>
+        <p>One vertical UGC video, shot, performed and edited by Kamani, delivered ready to post on <b>your own channels and product pages</b>. Organic use on the brand&rsquo;s own channels is included in the base fee.</p>
+        <p><b>Paid advertising is not included.</b> Running the video as a paid ad requires the usage rights add-on.</p>
+        <ul class="rate-includes">
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Delivered as a finished, ready-to-post file</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Organic posting on your socials &amp; product pages</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Paid ads require the usage rights add-on</li>
+        </ul>
+        <div class="rate-note-band"><b>Net quote rule:</b> the quoted figure is what Kamani receives. If a payment method takes a fee, the fee is added on top or covered by the brand — never deducted from the rate.</div>
+        <div class="rate-actions">
+          <button class="mini-btn add-btn" type="button">+ Estimate</button>
+          <button class="mini-btn copy-btn" type="button">Copy rate</button>
+        </div>
+      </article>
+
+      <article class="rate-addons panel" id="addons">
+        <h3>Add-ons</h3>
+        <p>Scope only what the campaign actually uses. Add-ons are agreed in writing before filming, and priced flat unless noted — no surprises at invoice time.</p>
+        <div class="price-rows">
+          <div class="price-row" data-name="Usage rights — paid ads" data-price="400" data-label="+$400 flat">
+            <span class="k">Usage rights — paid ads<small>Licence to run the video in paid advertising</small></span>
+            <span class="v">+$400</span>
+            <button class="row-btn add-btn" type="button">+ Add</button>
+          </div>
+          <div class="price-row" data-name="Whitelisting" data-price="300" data-label="+$300 flat">
+            <span class="k">Whitelisting<small>Brand runs ads through Kamani&rsquo;s handle / creator account</small></span>
+            <span class="v">+$300</span>
+            <button class="row-btn add-btn" type="button">+ Add</button>
+          </div>
+          <div class="price-row" data-name="Cross-posting to an additional platform" data-price="0" data-label="+50% of the base video rate, per extra platform">
+            <span class="k">Cross-posting to an additional platform<small>Per extra platform, as a percentage of the base video rate</small></span>
+            <span class="v">+50%</span>
+            <button class="row-btn copy-btn" type="button">Copy</button>
+          </div>
+          <div class="price-row" data-name="Exclusivity — 30 days" data-price="300" data-label="+$300 flat">
+            <span class="k">Exclusivity — 30 days<small>No competing brand in the same category for 30 days</small></span>
+            <span class="v">+$300</span>
+            <button class="row-btn add-btn" type="button">+ Add</button>
+          </div>
+          <div class="price-row" data-name="Rush delivery" data-price="200" data-label="+$200 flat">
+            <span class="k">Rush delivery<small>Priority turnaround when the calendar allows</small></span>
+            <span class="v">+$200</span>
+            <button class="row-btn add-btn" type="button">+ Add</button>
+          </div>
+          <div class="price-row" data-name="Extra revision" data-price="100" data-label="+$100 flat">
+            <span class="k">Extra revision<small>Per round, beyond the rounds included in the package</small></span>
+            <span class="v">+$100</span>
+            <button class="row-btn add-btn" type="button">+ Add</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PACKAGES ================= -->
+<section class="section" id="packages">
+  <span class="sec-index" aria-hidden="true">02</span>
+  <div class="wrap">
+    <div class="sec-head scroll-reveal">
+      <span class="kicker">02 / Packages</span>
+      <h2 class="sec-title">Pick a package. <em>Build from the base rate.</em></h2>
+      <p class="sec-sub">Every package is built from the same $350 base rate and the add-ons above, so the maths always checks out. Tell me the goal and I&rsquo;ll confirm fit and availability before anything is booked.</p>
+    </div>
+
+    <div class="rate-packs scroll-reveal-children">
+      <article class="rate-pack panel" data-name="Single Video" data-price="350" data-label="$350 USD">
+        <span class="tier-cat">Single</span>
+        <h3>Single Video</h3>
+        <div class="amount">$350 <span>USD</span></div>
+        <p>One UGC-only video at the base rate, with organic use on your own channels included. Add usage rights, whitelisting or any add-on as the campaign needs.</p>
+        <div class="rate-actions">
+          <button class="mini-btn add-btn" type="button">+ Estimate</button>
+          <button class="mini-btn copy-btn" type="button">Copy rate</button>
+        </div>
+      </article>
+
+      <article class="rate-pack panel hot" data-name="3-Video Test Pack" data-price="1050" data-label="$1,050 USD">
+        <span class="tier-flag">FOR AD TESTING</span>
+        <span class="tier-cat">Bundle</span>
+        <h3>3-Video Test Pack</h3>
+        <div class="amount">$1,050 <span>USD</span></div>
+        <p>Priced as three singles — 3 × $350 — so you get three different hooks and angles to test at the standard rate, bundled into one booking and one delivery. No discount is built in; the value is the test set itself.</p>
+        <div class="rate-actions">
+          <button class="mini-btn add-btn" type="button">+ Estimate</button>
+          <button class="mini-btn copy-btn" type="button">Copy rate</button>
+        </div>
+      </article>
+
+      <article class="rate-pack panel" data-name="Monthly Content Bank" data-price="0" data-label="Custom — priced by enquiry">
+        <span class="tier-cat">Always-On</span>
+        <h3>Monthly Content Bank</h3>
+        <div class="amount">Custom <span>ENQUIRY</span></div>
+        <p>A set monthly batch of UGC videos, scoped to your volume, formats and usage windows. Priced per enquiry from the same base rate and add-ons above.</p>
+        <div class="rate-actions">
+          <button class="mini-btn" type="button" data-enquire>Enquire</button>
+          <button class="mini-btn copy-btn" type="button">Copy rate</button>
+        </div>
+      </article>
+    </div>
+
+    <div class="rate-terms-strip panel scroll-reveal">
+      <span>Currency · <b>USD</b></span>
+      <span>Quotes · <b>Net to Kamani</b></span>
+      <span>Processing fees · <b>On the brand / grossed up</b></span>
+      <span>Organic use · <b>Included in base</b></span>
+      <span>Paid ads · <b>Usage add-on required</b></span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TERMS ================= -->
+<section class="section alt" id="terms">
+  <span class="sec-index" aria-hidden="true">03</span>
+  <div class="wrap">
+    <div class="sec-head scroll-reveal">
+      <span class="kicker">03 / Terms</span>
+      <h2 class="sec-title">Good to know. <em>How the money works.</em></h2>
+      <p class="sec-sub">The terms that sit behind every figure on this sheet, stated up front so the quote you see is the quote you pay.</p>
+    </div>
+
+    <div class="terms-grid scroll-reveal-children">
+      <article class="term-card panel">
+        <div class="term-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v12M15.5 9.2c-.6-1-1.9-1.5-3.5-1.5-2 0-3.4 1-3.4 2.4 0 3.3 7 1.7 7 4.4 0 1.4-1.6 2.4-3.6 2.4-1.7 0-3-.6-3.7-1.6"/></svg></div>
+        <h3>All figures in USD</h3>
+        <p>Every price on this sheet — the base rate, the packages and every add-on — is quoted in <b>US dollars</b>.</p>
+      </article>
+
+      <article class="term-card panel">
+        <div class="term-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.5 2.5L18 4l-1 3.5L20 10l-3 2.5L18 16l-3.5-1.5L12 17l-2.5-2.5L6 16l1-3.5L4 10l3-2.5L6 4l3.5 1.5z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <h3>Quotes are net to Kamani</h3>
+        <p>The quoted figure is what Kamani receives. <b>Payment-processing fees are on the brand or grossed up</b> in the quote — never deducted from the rate.</p>
+      </article>
+
+      <article class="term-card panel">
+        <div class="term-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></div>
+        <h3>Payment by bank transfer</h3>
+        <p>Payment by <b>bank transfer (Wise) is preferred</b>, and <b>PayPal and Payoneer are also available</b>. Full payment details are shared privately once a booking is confirmed.</p>
+      </article>
+
+      <article class="term-card panel">
+        <div class="term-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+        <h3>Organic vs. paid use</h3>
+        <p>The base rate covers <b>organic use on the brand&rsquo;s own channels</b> and product pages. Any paid advertising use — including whitelisted or boosted posts — requires the <b>usage rights add-on</b>.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER / ENQUIRY ================= -->
+<footer class="footer" id="footer-cta">
+  <div class="wrap">
+    <div class="cta-zone">
+      <span class="kicker" style="justify-content:center">Enquire</span>
+      <h2>Ready when <span class="gold-line">you are.</span></h2>
+      <p>Tell me the product, your timeline, and the package you&rsquo;re eyeing — or the add-ons your campaign needs. I&rsquo;ll confirm fit and availability before anything is booked.</p>
+      <div class="cta-btns">
+        <button type="button" class="btn btn-gold" data-enquire>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+          Enquire About UGC
+        </button>
+        <a class="btn btn-ghost" href="https://www.youtube.com/@KamaniBrown" target="_blank" rel="noopener">YouTube Channel</a>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <span>Kamani Brown · UGC Rate Sheet · All rates in USD</span>
+      <span><a href="#rates">Rates</a> &nbsp;·&nbsp; <a href="#packages">Packages</a> &nbsp;·&nbsp; <a href="#terms">Terms</a> &nbsp;·&nbsp; <a href="#top">Back to top</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= ESTIMATOR ================= -->
+<div class="estimator" id="estimator" aria-live="polite">
+  <div class="est-main">
+    <b id="estTotal">$0 <span>USD</span></b>
+    <small id="estDetail">0 items in estimate</small>
+  </div>
+  <button class="est-btn" id="estClear" type="button">Clear</button>
+  <button class="est-btn solid" id="estCopy" type="button">Copy estimate</button>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite">Copied</div>
+
+<!-- ================= ENQUIRY DIALOG ================= -->
+<div class="enquire-dialog" id="enquireDialog" role="dialog" aria-modal="true" aria-labelledby="enquireTitle">
+  <div class="enquire-backdrop" data-close></div>
+  <div class="enquire-card">
+    <button class="enquire-close" type="button" data-close aria-label="Close enquiry panel">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <span class="kicker">Enquire</span>
+    <h3 id="enquireTitle">Book a UGC slot</h3>
+    <p class="enquire-note">Email is the fastest way in. Tell me the product, the package you&rsquo;re eyeing, and your timeline — I reply to every serious enquiry personally.</p>
+    <div class="enquire-addr">
+      <span>katanagraphicsja@gmail.com</span>
+      <button class="enquire-copy" type="button" id="enquireCopy">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+        Copy email
+      </button>
+    </div>
+    <div class="enquire-actions">
+      <a class="btn btn-gold" id="enquireMail" target="_top" href="mailto:katanagraphicsja@gmail.com?subject=UGC%20enquiry">Open Mail App</a>
+      <a class="btn btn-ghost" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=katanagraphicsja@gmail.com&amp;su=UGC%20enquiry" target="_blank" rel="noopener">Compose in Gmail</a>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  /* Marquee: duplicate the group so the loop is seamless */
+  var track = document.getElementById('marqueeTrack');
+  if (track) { track.innerHTML += track.innerHTML; }
+
+  /* Scroll progress + sticky nav show/hide */
+  var progress = document.getElementById('scroll-progress');
+  var nav = document.getElementById('sticky-nav');
+  var lastY = 0;
+  function onScroll(){
+    var y = window.scrollY || 0;
+    var h = document.documentElement.scrollHeight - window.innerHeight;
+    progress.style.width = (h > 0 ? (y / h) * 100 : 0) + '%';
+    if (y < 140) { nav.classList.add('is-hidden'); }
+    else if (y < lastY - 4 || y < 500) { nav.classList.remove('is-hidden'); }
+    else if (y > lastY + 4) { nav.classList.add('is-hidden'); }
+    lastY = y;
+  }
+  window.addEventListener('scroll', onScroll, { passive:true });
+  onScroll();
+
+  /* Scroll reveal */
+  var revealEls = document.querySelectorAll('.scroll-reveal, .scroll-reveal-children');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) { e.target.classList.add('active'); io.unobserve(e.target); }
+      });
+    }, { threshold: .12 });
+    revealEls.forEach(function(el){ io.observe(el); });
+  } else {
+    revealEls.forEach(function(el){ el.classList.add('active'); });
+  }
+
+  /* Toast */
+  var toast = document.getElementById('toast');
+  var toastTimer = null;
+  function showToast(msg){
+    toast.textContent = msg;
+    toast.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove('show'); }, 2000);
+  }
+
+  /* Clipboard helper (with fallback) */
+  function copyText(text, btn, doneLabel){
+    function done(){
+      showToast('Copied: ' + text.split('\n').join(' · '));
+      if (btn) {
+        var old = btn.textContent;
+        btn.classList.add('copied');
+        btn.textContent = doneLabel || 'Copied ✓';
+        setTimeout(function(){
+          btn.classList.remove('copied');
+          if (!btn.classList.contains('added')) btn.textContent = old;
+        }, 1400);
+      }
+    }
+    function fallback(){
+      var ta = document.createElement('textarea');
+      ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+      document.body.appendChild(ta); ta.select();
+      try { document.execCommand('copy'); } catch(e) {}
+      document.body.removeChild(ta); done();
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done).catch(fallback);
+    } else { fallback(); }
+  }
+
+  /* Estimate state */
+  var selected = new Map(); /* host element -> {name, price, label} */
+  var estimator = document.getElementById('estimator');
+  var estTotal = document.getElementById('estTotal');
+  var estDetail = document.getElementById('estDetail');
+
+  function fmt(n){ return '$' + n.toLocaleString('en-US'); }
+
+  function renderEstimate(){
+    var total = 0; var names = [];
+    selected.forEach(function(v){ total += v.price; names.push(v.name); });
+    estTotal.innerHTML = fmt(total) + ' <span>USD</span>';
+    estDetail.textContent = selected.size === 0 ? '0 items in estimate' : names.join(' · ');
+    estDetail.title = names.join(', ');
+    estimator.classList.toggle('show', selected.size > 0);
+  }
+
+  function defaultLabel(btn){
+    return btn.classList.contains('row-btn') ? '+ Add' : '+ Estimate';
+  }
+
+  document.querySelectorAll('.add-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var host = btn.closest('[data-name]');
+      if (!host) return;
+      var name = host.getAttribute('data-name');
+      var price = parseInt(host.getAttribute('data-price') || '0', 10);
+      var label = host.getAttribute('data-label') || '';
+      /* Sync every add button bound to the same host (a package can appear once, but base rate lives in one card) */
+      var siblings = Array.prototype.filter.call(document.querySelectorAll('.add-btn'), function(b){
+        return b.closest('[data-name]') === host;
+      });
+      if (selected.has(host)) {
+        selected.delete(host);
+        siblings.forEach(function(b){ b.classList.remove('added'); b.textContent = defaultLabel(b); });
+      } else {
+        if (price <= 0) { showToast(name + ' is priced on request'); return; }
+        selected.set(host, { name:name, price:price, label:label });
+        siblings.forEach(function(b){ b.classList.add('added'); b.textContent = 'Added ✓'; });
+      }
+      renderEstimate();
+    });
+  });
+
+  document.querySelectorAll('.copy-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var host = btn.closest('[data-name]');
+      if (!host) return;
+      var name = host.getAttribute('data-name');
+      var label = host.getAttribute('data-label') || '';
+      copyText(name + ' — ' + label, btn);
+    });
+  });
+
+  document.getElementById('estClear').addEventListener('click', function(){
+    selected.clear();
+    document.querySelectorAll('.add-btn.added').forEach(function(b){
+      b.classList.remove('added');
+      b.textContent = defaultLabel(b);
+    });
+    renderEstimate();
+  });
+
+  document.getElementById('estCopy').addEventListener('click', function(){
+    if (selected.size === 0) return;
+    var lines = []; var total = 0;
+    selected.forEach(function(v){ lines.push('• ' + v.name + ' — ' + v.label); total += v.price; });
+    lines.push('Total: ' + fmt(total) + ' USD');
+    lines.push('All figures USD · Quotes net to Kamani · Processing fees on the brand or grossed up');
+    copyText(lines.join('\n'), null);
+  });
+
+  /* Enquiry dialog */
+  var dialog = document.getElementById('enquireDialog');
+  var lastFocus = null;
+  function openDialog(){
+    lastFocus = document.activeElement;
+    dialog.classList.add('open');
+    var closeBtn = dialog.querySelector('.enquire-close');
+    if (closeBtn) closeBtn.focus();
+  }
+  function closeDialog(){
+    dialog.classList.remove('open');
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+  document.querySelectorAll('[data-enquire]').forEach(function(el){
+    el.addEventListener('click', openDialog);
+  });
+  dialog.querySelectorAll('[data-close]').forEach(function(el){
+    el.addEventListener('click', closeDialog);
+  });
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape' && dialog.classList.contains('open')) closeDialog();
+  });
+  document.getElementById('enquireCopy').addEventListener('click', function(){
+    copyText('katanagraphicsja@gmail.com', this);
+  });
+
+  /* Open Mail App: the link itself carries target="_top" so the mailto
+     hand-off is aimed at the top frame, where the OS mail handler can
+     pick it up — a mailto that targets this embedded frame gets
+     silently swallowed by in-app browsers. This listener only watches
+     the outcome: if the tap doesn't hand off to a mail app (no blur,
+     hide or pagehide follows), point at the copy-address / Gmail
+     options instead of failing silently. */
+  var mailLink = document.getElementById('enquireMail');
+  if (mailLink) {
+    mailLink.addEventListener('click', function(){
+      var handedOff = false;
+      function mark(){ handedOff = true; }
+      window.addEventListener('blur', mark);
+      window.addEventListener('pagehide', mark);
+      document.addEventListener('visibilitychange', mark);
+      setTimeout(function(){
+        window.removeEventListener('blur', mark);
+        window.removeEventListener('pagehide', mark);
+        document.removeEventListener('visibilitychange', mark);
+        if (!handedOff && !document.hidden) showToast('Mail app not opening? Copy the address above, or use Compose in Gmail.');
+      }, 1200);
+    });
+  }
+})();
+</script>
+</body>
+</html>
